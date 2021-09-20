@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="shortcut icon" href="./assets/logo_color-run.png" type="image/x-icon">
     <link rel="stylesheet" href="./fonts/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Color Run Cúcuta</title>
 </head>
 
-<body>
-    <section class="home-container foto-container" id="home">
-        <nav class="navbar navbar-expand-sm ">
+<body class="bg-light">
+    <section class="home-container foto-container d-flex align-items-center justify-content-center" id="home">
+        <div class="menu-icon" id="menu-icon" onclick="active()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar navbar-expand-sm " id="navbar">
             <ul class="navbar-nav px-3">
                 <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#event" class="nav-link">Acerca</a></li>
@@ -24,7 +30,7 @@
         </nav>
         <h1 class="display-1 text-center my-4">Color Run Cúcuta</h1>
     </section>
-    <section class="row event-container my-2 mx-0 " id="event">
+    <section class="row event-container my-3 mx-0 " id="event">
         <div class="col-sm-5 event-foto foto-container"></div>
         <div class="col-sm-7 p-4 event-description">
             <h4 class="display-4 title-event">La carrera!</h4>
@@ -36,7 +42,7 @@
                 tempore! Ipsa.</p>
         </div>
     </section>
-    <section class="row why-container my-2 mx-0" id="why">
+    <section class="row why-container my-3 mx-0" id="why">
         <div class="col-sm-7 p-4 why-description">
             <h4 class="display-4 title-why">¿Por qué Color Run?</h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum corporis atque praesentium quidem eum
@@ -47,8 +53,9 @@
                 tempore! Ipsa.</p>
         </div>
         <div class="col-sm-5 why-foto foto-container"></div>
+        <button class=" btn-donar btn btn-warning">Donar</button>
     </section>
-    <section class="row how-container my-2 mx-0" id="how">
+    <section class="row how-container my-3 mx-0" id="how">
         <div class="col-sm-5 how-foto foto-container"></div>
         <div class="col-sm-7 p-4 how-description">
             <h4 class="display-4 title-how">Sobre el evento</h4>
@@ -103,6 +110,7 @@
             &copy;Todos los derechos reservados.
         </p>
     </footer>
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>
