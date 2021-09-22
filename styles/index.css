@@ -39,8 +39,8 @@ h4{
 }
 
 .nav-link:hover {
-  background-color: var(--pink);
-  color: white;
+  background-color: white;
+  color: var(--pink);
   transition: 0.3s;
 }
 
@@ -195,6 +195,33 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+.donar-form-container{
+  color: rgb(119, 119, 119);
+  padding: 20px 0;
+}
+.donar-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.btn-donar-modal{
+  background-color: var(--pink);
+  border: none;
+}
+.btn-donar-modal:hover{
+  transition: .3s;
+  background-color: var(--mango);
+}
+.btn-exit-modal{
+  background: none;
+  border: none;
+  font-size: 2em;
+  color:rgb(224, 224, 224);
+  position: absolute;
+  top: -100px;
+  right: -40px;
+}
+
 
 footer {
   background-color: var(--purple);
